@@ -44,7 +44,7 @@ namespace achadoperdido_api_mongodb_dotnet.Controllers
 
       var perdido = new Perdido(dto.DataPerdido, dto.Descricao, dto.Latitude, dto.Longitude);
 
-      _perdidosCollection.UpdateOne(Builders<Perdido>.Filter.Where(_ => _.DataPerdido == dto.DataPerdido), Builders<Perdido>.Update.Set("Descricao", dto.Descricao));
+      _perdidosCollection.UpdateOne(Builders<Perdido>.Filter.Where(_ => _.DataPerdido == dto.DataPerdido), Builders<Perdido>.Update.Set("descricao", dto.Descricao));
 
       return Ok("Atualizado com sucesso");
     }
@@ -55,7 +55,7 @@ namespace achadoperdido_api_mongodb_dotnet.Controllers
     {
       _perdidosCollection.DeleteOne(Builders<Perdido>.Filter.Where(_ => _.DataPerdido == dataPerda));
 
-      return Ok("Apagado com sucesso");
+      return Ok("Objeto encontra, apagado o registro com sucesso");
     }
   }
 }

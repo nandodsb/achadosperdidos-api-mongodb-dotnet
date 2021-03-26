@@ -1,0 +1,192 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "achadosperdidos-api-mongodb-dotnet",
+    "description": "",
+    "contact": {}
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/perdido": {
+      "post": {
+        "description": "",
+        "summary": "/perdido",
+        "tags": [
+          "Achados e Perdidos API"
+        ],
+        "operationId": "/perdido",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1perdidoRequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "summary": "/perdido1",
+        "tags": [
+          "Achados e Perdidos API"
+        ],
+        "operationId": "/perdido1",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1perdidoRequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/perdido/2021-03-01": {
+      "delete": {
+        "description": "",
+        "summary": "/perdido2",
+        "tags": [
+          "Achados e Perdidos API"
+        ],
+        "operationId": "/perdido2",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1perdidoRequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "/perdidoRequest": {
+      "title": "/perdidoRequest",
+      "example": {
+        "dataPerdido": "2021-03-01",
+        "descricao": "Celular",
+        "latitude": -21.5638994,
+        "longitude": -43.6555712
+      },
+      "type": "object",
+      "properties": {
+        "dataPerdido": {
+          "type": "string"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number",
+          "format": "double"
+        },
+        "longitude": {
+          "type": "number",
+          "format": "double"
+        }
+      },
+      "required": [
+        "dataPerdido",
+        "descricao",
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Achados e Perdidos API",
+      "description": ""
+    }
+  ]
+}

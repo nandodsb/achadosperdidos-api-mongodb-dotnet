@@ -1,0 +1,532 @@
+{
+  "Name": "achadosperdidos-api-mongodb-dotnet",
+  "BaseUri": "http://localhost:5000",
+  "ServerConfiguration": {
+    "UseParent": false,
+    "DefaultEnvironment": "Base Environment",
+    "DefaultServer": "Server 1",
+    "Environments": [
+      {
+        "Name": "Base Environment",
+        "Servers": [
+          {
+            "Name": "Server 1",
+            "Url": "http://localhost:5000"
+          }
+        ]
+      }
+    ],
+    "Parameters": []
+  },
+  "Description": "",
+  "Version": "1.0",
+  "Contact": {},
+  "AdditionalHeaders": [],
+  "Authentication": {
+    "Type": "None",
+    "AuthType": "None",
+    "Parameters": [],
+    "Scopes": [],
+    "ParamFormats": {}
+  },
+  "Endpoints": [
+    {
+      "Name": "/perdido",
+      "Description": "",
+      "HTTPMethod": "POST",
+      "Group": "Achados e Perdidos API",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Route": "/perdido",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Dynamic",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "IsArrayOfMap": false,
+        "Deprecated": false,
+        "Name": "response"
+      },
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "RequiredScopes": [],
+      "Parameters": [
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "/perdidoRequest",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "/perdido",
+          "Description": "",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}"
+            },
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
+    },
+    {
+      "Name": "/perdido1",
+      "Description": "",
+      "HTTPMethod": "PUT",
+      "Group": "Achados e Perdidos API",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Route": "/perdido",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Dynamic",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "IsArrayOfMap": false,
+        "Deprecated": false,
+        "Name": "response"
+      },
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "RequiredScopes": [],
+      "Parameters": [
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "/perdidoRequest",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "/perdido1",
+          "Description": "",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}"
+            },
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
+    },
+    {
+      "Name": "/perdido2",
+      "Description": "",
+      "HTTPMethod": "DELETE",
+      "Group": "Achados e Perdidos API",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Route": "/perdido/2021-03-01",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Dynamic",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "IsArrayOfMap": false,
+        "Deprecated": false,
+        "Name": "response"
+      },
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "RequiredScopes": [],
+      "Parameters": [
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "/perdidoRequest",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "/perdido2",
+          "Description": "",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\n  \"dataPerdido\": \"2021-03-01\",\n  \"descricao\": \"Celular\",\n  \"latitude\": -21.5638994,\n  \"longitude\": -43.6555712\n}"
+            },
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
+    }
+  ],
+  "EndpointGroups": [
+    {
+      "Name": "Achados e Perdidos API",
+      "Description": ""
+    }
+  ],
+  "CustomTypes": [
+    {
+      "Name": "/perdidoRequest",
+      "ImplementationType": "Structure",
+      "Fields": [
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "dataPerdido",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "descricao",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "Precision",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "latitude",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "Precision",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "IsArrayOfMap": false,
+          "Deprecated": false,
+          "Name": "longitude",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "ExampleValue": "{\"dataPerdido\":\"2021-03-01\",\"descricao\":\"Celular\",\"latitude\":-21.5638994,\"longitude\":-43.6555712}",
+      "Deprecated": false,
+      "IsXmlType": false
+    }
+  ],
+  "UserDefinedImportedTypes": [],
+  "CodeGenSettings": {
+    "SynchronyMode": "Asynchronous",
+    "ModelSerializationScheme": "Json",
+    "ArraySerialization": "Indexed",
+    "Nullify404": false,
+    "UseHttpMethodPrefix": false,
+    "UseModelPrefix": false,
+    "UseExceptionPrefix": true,
+    "UseEnumPrefix": true,
+    "UseControllerPrefix": true,
+    "UseConstructorsForConfig": false,
+    "Timeout": 0.0,
+    "AndroidUseAppManifest": false,
+    "iOSUseAppInfoPlist": false,
+    "iOSGenerateCoreData": false,
+    "CollapseParamsToArray": false,
+    "RunscopeEnabled": false,
+    "AndroidHttpClient": "ANDROID_OK",
+    "JavaHttpClient": "JAVA_OK",
+    "ObjCHttpClient": "UNIREST",
+    "CSharpHttpClient": "UNIREST",
+    "NodeHttpClient": "NODE_REQUEST",
+    "JavaUsePropertiesConfig": false,
+    "PHPHttpClient": "UNIREST",
+    "EnablePHPComposerVersionString": false,
+    "EnableGlobalUserAgent": true,
+    "EnableAdditionalModelProperties": false,
+    "PreserveParameterOrder": true,
+    "ValidateRequiredParameters": false,
+    "AppendContentHeaders": true,
+    "GenerateInterfaces": false,
+    "UseCommonSDKLibrary": false,
+    "ParameterArrayFormat": "ParamArrayWithIndex",
+    "SecurityProtocols": [
+      "Ssl3",
+      "Tls"
+    ],
+    "GenerateTravisConfig": false,
+    "GenerateCircleConfig": false,
+    "GenerateAppveyorConfig": false,
+    "GenerateJenkinsConfig": false,
+    "EnableLogging": false,
+    "EnableHttpCache": false,
+    "Retries": 0,
+    "RetryInterval": 1.0,
+    "BackoffFactor": 2.0,
+    "StatusCodesToRetry": [
+      408,
+      413,
+      429,
+      500,
+      502,
+      503,
+      504,
+      521,
+      522,
+      524
+    ],
+    "RequestMethodsToRetry": [
+      "GET",
+      "PUT"
+    ],
+    "UserConfigurableRetries": true,
+    "GenerateAdvancedDocs": true,
+    "DisableDocs": false,
+    "StoreTimezoneInformation": false,
+    "UnderscoreNumbers": true,
+    "UseSingletonPattern": true,
+    "IgnoreIfNullJson": false,
+    "DisableLinting": false,
+    "SortResources": false,
+    "LiftParameterDescriptionFromCustomType": false,
+    "AllowSkippingSSLCertVerification": false,
+    "ApplyCustomizations": [],
+    "DoNotSplitWords": [],
+    "ReturnCompleteHttpResponse": false,
+    "ThrowForHttpErrorStatusCodes": true,
+    "GenerateModels": true,
+    "GenerateEnums": true,
+    "GenerateExceptions": true,
+    "ResponseMapping": {
+      "Type": "Simple"
+    },
+    "ForceKeywordArgsInRuby": false,
+    "SymbolizeHashKeysInRuby": false,
+    "UsageExampleEndpoint": {
+      "Description": "",
+      "EndpointGroupName": "",
+      "EndpointName": ""
+    },
+    "IsLatestVersion": false,
+    "CustomDependencies": [],
+    "EnableImmutableModels": false,
+    "UseEndpointMethodName": false,
+    "EncodeTemplateParameters": true,
+    "GenerateExamplesForOptionalFields": false,
+    "MultitargetDotnetVersions": false,
+    "BackoffMax": 0.0,
+    "RetryOnTimeout": true
+  },
+  "Errors": [],
+  "TestGenSettings": {
+    "Configuration": {},
+    "TestTimeout": 30,
+    "PrecisionDelta": 0.01
+  },
+  "Roles": [],
+  "Namespaces": [],
+  "ExportSettings": {
+    "ExportExtensions": false,
+    "UseDateTimeOnlyInRaml": false,
+    "SetPostmanParamValuesAsVariables": false,
+    "WrapResponseFieldInWsdl": true,
+    "AllowEmptyTypeAttributesInXsd": false,
+    "WrapInputOutputTypesInElementInXsd": false,
+    "AddRefSiblingDataInAllOfSchema": false,
+    "EncodeUrlParamsInPostman": true
+  }
+}

@@ -16,7 +16,7 @@
 <h2>💻  API</h2>
 <div align="">
 
-[![Run in Postman](https://run.pstmn.io/button.svg)]()
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f30ae0ad59403dc34607)
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)]()
 </div>
 

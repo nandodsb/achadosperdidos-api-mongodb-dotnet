@@ -1,0 +1,143 @@
+{
+  "info": {
+    "name": "achadosperdidos-api-mongodb-dotnet",
+    "_postman_id": "c36eed5f-83da-4d89-819e-e711e318cc68",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Achados e Perdidos API",
+      "description": "",
+      "item": [
+        {
+          "id": "99a8447e-66ce-4e57-bc89-d638cb007973",
+          "name": "/perdido",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "perdido"
+              ],
+              "port": "5000"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"dataPerdido\": \"2021-03-01\",\r\n  \"descricao\": \"Celular\",\r\n  \"latitude\": -21.5638994,\r\n  \"longitude\": -43.6555712\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "111c05fc-c709-4839-8ed9-30ec57fed00a"
+            }
+          ]
+        },
+        {
+          "id": "1ef0bfba-ea70-4ea8-b6e6-7f00800b9905",
+          "name": "/perdido1",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "perdido"
+              ],
+              "port": "5000"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"dataPerdido\": \"2021-03-01\",\r\n  \"descricao\": \"Celular\",\r\n  \"latitude\": -21.5638994,\r\n  \"longitude\": -43.6555712\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "3c5d190c-21eb-4c36-bf08-e3ab6c04104a"
+            }
+          ]
+        },
+        {
+          "id": "e98ba6fc-cfe9-47db-8656-e2262afc98d1",
+          "name": "/perdido2",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "perdido/2021-03-01"
+              ],
+              "port": "5000"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"dataPerdido\": \"2021-03-01\",\r\n  \"descricao\": \"Celular\",\r\n  \"latitude\": -21.5638994,\r\n  \"longitude\": -43.6555712\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "3d1c2dfe-8ed9-46d5-82de-8961ef5637ab"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
