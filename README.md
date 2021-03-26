@@ -17,7 +17,7 @@
 <div align="">
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f30ae0ad59403dc34607)
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)]()
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=&uri=https%3A%2F%2Fgithub.com%2FNandosbx%2Fachadosperdidos-api-mongodb-dotnet%2Fblob%2Fmaster%2Fachados-perdidos-mongodb-dotnet.insomnia_collection.json)
 </div>
 
 
